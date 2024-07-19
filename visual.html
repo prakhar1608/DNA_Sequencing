@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horspool's Algorithm Tracing Visualization</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body >
+<div class="container">
+    <h1>Horspool's Algorithm Tracing Visualization</h1>
+    <div class="input-container">
+        <label for="text-input">Text:</label>
+        <textarea id="text-input" rows="4" cols="50">AGCTTAGCTGCGCTAGCTA</textarea>
+    </div>
+    <div class="input-container">
+        <label for="pattern-input">Pattern:</label>
+        <input type="text" id="pattern-input" value="AGCT">
+        <button onclick="startSearch()">Search</button>
+    </div>
+    <div class="visualization-container">
+        <div class="shift-table-container">
+            <p><strong>Shift Table:</strong></p>
+            <div id="shift-table"></div>
+        </div>
+        <p><strong>Visualization:</strong></p>
+        <div id="visualization"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
