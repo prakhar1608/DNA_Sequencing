@@ -1,4 +1,4 @@
-# DNA Sequencing
+# 🧬 DNA Sequencing
 
 ## 📌 Overview
 This project demonstrates **DNA sequencing and visualization** using a combination of **C for backend sequence processing** and a **web-based interface for visualization**.
@@ -26,7 +26,33 @@ This project demonstrates **DNA sequencing and visualization** using a combinati
 ### Compile the C Program
 ```bash
 gcc -o dna_seq main.c
+```
+### Run the Program
+```bash
 
 ./dna_seq input.txt
+```
+👉 The program will process DNA sequences and print results (stdout or file depending on implementation).
+## Launch the Web Interface
+### Option 1: Open visual.html directly in your browser.
+
+### Option 2 (recommended): Start a local server in the project directory:
+
+```bash
 python3 -m http.server 8000
+```
+Then open:
+
+```bash
+
 http://localhost:8000/visual.html
+```
+## Project Structure
+```graphql
+DNA_Sequencing/
+│── main.c          # Core C program for DNA sequence processing
+│── visual.html     # Webpage for visualization
+│── script.js       # Handles interactive visualization logic
+│── style.css       # Stylesheet for the visualization
+│── README.md       # Project documentation
+```
